@@ -12,7 +12,7 @@ const repeatNumbers = function(arr) {
   }
   
   return output.join(', ');
-}
+};
 
 console.log(repeatNumbers([[1, 10]]));
 console.log(repeatNumbers([[1, 2], [2, 3]]));

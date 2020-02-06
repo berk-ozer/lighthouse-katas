@@ -4,10 +4,10 @@ let attemptsArr = [];
 
 let prompt = require("prompt-sync")({sigint: true});
 
-while (guess != answer) {
+while (guess !== answer) {
 
   console.log('\nGuess a number between 1-100:');
-  guess = prompt('> ');
+  guess = Number(prompt('> '));
 
   if (attemptsArr.includes(guess)) {
     console.log('Already guessed.');
@@ -28,6 +28,6 @@ while (guess != answer) {
 
   } else {
     console.log('You got it! You took ' + attemptsArr.length + ' attempts.\n');
-  } 
+  }
 
 }

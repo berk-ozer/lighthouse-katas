@@ -1,11 +1,11 @@
-function generateBoard(whiteQueen, blackQueen) {
+const generateBoard = (whiteQueen, blackQueen) => {
 
   let chessBoard = [];
 
   // create empty chess board
   for (let i = 0; i < 8; i++) {
 
-    let row = []; 
+    let row = [];
 
     for (let j = 0; j < 8; j++) {
       row.push(0);
@@ -20,9 +20,9 @@ function generateBoard(whiteQueen, blackQueen) {
   chessBoard[blackQueen[0]][blackQueen[1]] = 1;
 
   return chessBoard;
-}
+};
 
-function queenThreat(chessBoard) {
+const queenThreat = (chessBoard) => {
 
   let queensPosition = [];
 
@@ -46,7 +46,7 @@ function queenThreat(chessBoard) {
     return false;
   }
 
-}
+};
 
 let whiteQueen = [0, 5];
 let blackQueen = [5, 0];

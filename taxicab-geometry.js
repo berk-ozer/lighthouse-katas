@@ -24,7 +24,7 @@ const blocksAway = function(directions) {
       drivingAngle -= 360;
     }
 
-    // set currentLocation 
+    // set currentLocation
     if (drivingAngle === 0) {
       currentLocation.east += directions[i + 1];
 

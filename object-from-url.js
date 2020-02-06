@@ -6,7 +6,7 @@ const urlDecode = function(text) {
   
   const textArr = text.split('=');
 
-  for (let i = 0; i < textArr.length; i+= 2) {
+  for (let i = 0; i < textArr.length; i += 2) {
     output[textArr[i]] = textArr[i + 1];
   }
 

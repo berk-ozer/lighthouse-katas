@@ -4,7 +4,7 @@ const instructorWithLongestName = function(instructors) {
   for (let person of instructors) {
     if (person.name.length > longestName.name.length) {
       longestName = person;
-    } 
+    }
   }
 
   return longestName;
